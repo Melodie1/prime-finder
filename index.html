@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Finder</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #181f1c; color: #a5aa52; padding: 40px; }
+        .container { max-width: 500px; background: #274029; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(155, 0, 0, 0.1); margin: auto; }
+        h2 { text-align: center; color: #9ea93f; }
+        .cont2 { max-width: 500px; background: #181F1C; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(155, 0, 0, 0.1); margin: auto; }
+        h4 {text-align:center; color: #a5aa52; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #6E859F; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; background: #370926; color: #a5aa52; border: none; padding: 12px; margin-top: 20px; border-radius: 4px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #42113c; }
+        .message { text-align: center; margin-top: 15px; font-weight: bold; color: #014201; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prime Identifier</h2>
+        <h4>Identifies Whether the Number you have entered is a prime number or not.</h4>
+        <form id = "prime">
+            <label for="num">Enter the Number:</label>
+            <input type="number" min="1" id="num" name="num" required placeholder="Example. 67">
+            <button type="submit" onclick="handleSubmit(event)">Submit</button><br>
+        </form>
+        <br><br>
+        <div class="cont2">
+            <h4 id="h4">Result</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
